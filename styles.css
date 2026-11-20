@@ -338,12 +338,12 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 /* ===== Hero: Orbital Style Discovery (dos anillos) ===== */
 @keyframes orbit-cw{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 @keyframes orbit-ccw{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
-.oh{--scroll-progress:0;--radius-inner-base:12rem;--radius-outer-base:19.5rem;--orbit-expand:calc(var(--scroll-progress) * 20rem);
+.oh{--scroll-progress:0;--radius-inner-base:clamp(13rem,31vmin,21rem);--radius-outer-base:clamp(21rem,46vmin,34rem);--orbit-expand:calc(var(--scroll-progress) * 20rem);
   position:relative;min-height:100vh;overflow:hidden;background:var(--bone);color:var(--ink)}
-.oh__stage{position:relative;width:100%;height:100vh;min-height:44rem;display:grid;place-items:center}
-.oh__halo{position:absolute;width:44rem;height:44rem;border-radius:50%;pointer-events:none;filter:blur(8px);
+.oh__stage{position:relative;width:100%;height:100vh;min-height:44rem;display:grid;place-items:center;padding-top:4rem}
+.oh__halo{translate:0 2rem;position:absolute;width:44rem;height:44rem;border-radius:50%;pointer-events:none;filter:blur(8px);
   background:radial-gradient(circle at 50% 45%,rgba(232,57,29,.22) 0%,rgba(169,208,230,.30) 35%,rgba(246,246,242,0) 65%)}
-.oh__ring{position:absolute;top:50%;left:50%;width:0;height:0;pointer-events:none;will-change:transform}
+.oh__ring{position:absolute;top:calc(50% + 2rem);left:50%;width:0;height:0;pointer-events:none;will-change:transform}
 .oh__ring--outer{animation:orbit-ccw 140s linear infinite}
 .oh__ring--inner{animation:orbit-cw 90s linear infinite}
 .oh-sat{position:absolute;top:0;left:0}
@@ -377,8 +377,10 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 @media(max-width:767px){
   .oh__foot{flex-direction:column;gap:.75rem;text-align:center}
 }
+@media(max-width:767px){
+  .oh{--radius-inner-base:clamp(10.5rem,34vmin,14rem);--radius-outer-base:clamp(17rem,52vmin,22rem)}
+}
 @media(max-width:479px){
-  .oh{--radius-inner-base:9rem;--radius-outer-base:15rem}
   .oh__stage{min-height:40rem}
   .oh__center{padding:0 1rem}
   .oh-card--sm{width:2.5rem;height:3.125rem}.oh-card--md{width:3rem;height:3.75rem}.oh-card--lg{width:3.5rem;height:4.375rem}
@@ -387,4 +389,15 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 }
 @media(prefers-reduced-motion:reduce){
   .oh__ring,.oh-upright{animation:none!important}
+}
+
+.oh__more{align-self:center;font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:4px;margin-right:8px;white-space:nowrap}
+.oh__more:hover{color:var(--red)}
+.back{margin-top:40px}
+.foot__links{display:flex;gap:10px 20px;flex-wrap:wrap;font-size:14px}
+.foot__links a:hover{color:var(--sky)}
+@media(max-width:767px){
+  .oh__ctas{flex-wrap:wrap;justify-content:center}
+  .oh__ctas .btn{white-space:nowrap}
+  .oh__more{width:100%;text-align:center;margin:0 0 2px}
 }
