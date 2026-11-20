@@ -338,7 +338,7 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 /* ===== Hero: Orbital Style Discovery (dos anillos) ===== */
 @keyframes orbit-cw{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 @keyframes orbit-ccw{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
-.oh{--scroll-progress:0;--radius-inner-base:clamp(13rem,31vmin,21rem);--radius-outer-base:clamp(21rem,46vmin,34rem);--orbit-expand:calc(var(--scroll-progress) * 20rem);
+.oh{--scroll-progress:0;--radius-inner-base:clamp(15rem,min(30vw,38vmin),25rem);--radius-outer-base:clamp(25rem,min(46vw,58vmin),40rem);--orbit-expand:calc(var(--scroll-progress) * 20rem);
   position:relative;min-height:100vh;overflow:hidden;background:var(--bone);color:var(--ink)}
 .oh__stage{position:relative;width:100%;height:100vh;min-height:44rem;display:grid;place-items:center;padding-top:4rem}
 .oh__halo{translate:0 2rem;position:absolute;width:44rem;height:44rem;border-radius:50%;pointer-events:none;filter:blur(8px);
@@ -378,7 +378,7 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
   .oh__foot{flex-direction:column;gap:.75rem;text-align:center}
 }
 @media(max-width:767px){
-  .oh{--radius-inner-base:clamp(10.5rem,34vmin,14rem);--radius-outer-base:clamp(17rem,52vmin,22rem)}
+  .oh{--radius-inner-base:clamp(12rem,36vmin,16rem);--radius-outer-base:clamp(19rem,56vmin,25rem)}
 }
 @media(max-width:479px){
   .oh__stage{min-height:40rem}
@@ -401,3 +401,6 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
   .oh__ctas .btn{white-space:nowrap}
   .oh__more{width:100%;text-align:center;margin:0 0 2px}
 }
+/* barra inferior del hero: degradado para que los botones se lean sobre las tarjetas */
+.oh__foot{left:0;right:0;bottom:0;padding:3rem 2rem 1.75rem;background:linear-gradient(to top,var(--bone) 45%,rgba(246,246,242,0))}
+@media(max-width:479px){.oh__foot{left:0;right:0;bottom:0;padding:3rem 1rem 1rem}}
