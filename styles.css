@@ -338,11 +338,9 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 /* ===== Hero: Orbital Style Discovery (dos anillos) ===== */
 @keyframes orbit-cw{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 @keyframes orbit-ccw{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
-.oh{--scroll-progress:0;--radius-inner-base:clamp(15rem,min(30vw,38vmin),25rem);--radius-outer-base:clamp(25rem,min(46vw,58vmin),40rem);--orbit-expand:calc(var(--scroll-progress) * 20rem);
+.oh{--scroll-progress:0;--radius-inner-base:clamp(15rem,min(34vw,40vmin),27rem);--radius-outer-base:clamp(25rem,min(52vw,62vmin),44rem);--orbit-expand:calc(var(--scroll-progress) * 20rem);
   position:relative;min-height:100vh;overflow:hidden;background:var(--bone);color:var(--ink)}
 .oh__stage{position:relative;width:100%;height:100vh;min-height:44rem;display:grid;place-items:center;padding-top:4rem}
-.oh__halo{translate:0 2rem;position:absolute;width:44rem;height:44rem;border-radius:50%;pointer-events:none;filter:blur(8px);
-  background:radial-gradient(circle at 50% 45%,rgba(232,57,29,.22) 0%,rgba(169,208,230,.30) 35%,rgba(246,246,242,0) 65%)}
 .oh__ring{position:absolute;top:calc(50% + 2rem);left:50%;width:0;height:0;pointer-events:none;will-change:transform}
 .oh__ring--outer{animation:orbit-ccw 140s linear infinite}
 .oh__ring--inner{animation:orbit-cw 90s linear infinite}
@@ -366,42 +364,64 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 .oh__eyebrow{display:inline-block;font-size:.6875rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#55565b;margin-bottom:1.5rem}
 .oh__title{margin:0;font-weight:600;font-size:clamp(2.5rem,6.5vw,4.75rem);line-height:1.02;letter-spacing:-.035em;color:var(--ink)}
 .oh__title em{font-style:normal;background:linear-gradient(90deg,#e8391d,#f08a5d 55%,#6aa5c7);-webkit-background-clip:text;background-clip:text;color:transparent}
-.oh__foot{position:absolute;left:2rem;right:2rem;bottom:1.75rem;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:16px;pointer-events:none}
-.oh__ctas{display:flex;gap:10px;pointer-events:auto}
-.oh__ctas .btn{padding:12px 20px}
-.oh__note{display:inline-flex;align-items:center;gap:.5rem;font-size:.6875rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#6a6a6a}
-.oh__note .dot{width:6px;height:6px;border-radius:50%;background:var(--red);flex:none}
 @media(max-width:992px){
   .oh-card--sm{width:3rem;height:3.75rem}.oh-card--md{width:3.5rem;height:4.375rem}.oh-card--lg{width:4rem;height:5rem}
 }
 @media(max-width:767px){
-  .oh__foot{flex-direction:column;gap:.75rem;text-align:center}
-}
+  }
 @media(max-width:767px){
-  .oh{--radius-inner-base:clamp(12rem,36vmin,16rem);--radius-outer-base:clamp(19rem,56vmin,25rem)}
+  .oh{--radius-inner-base:clamp(13rem,40vmin,17rem);--radius-outer-base:clamp(21rem,62vmin,27rem)}
 }
 @media(max-width:479px){
   .oh__stage{min-height:40rem}
   .oh__center{padding:0 1rem}
   .oh-card--sm{width:2.5rem;height:3.125rem}.oh-card--md{width:3rem;height:3.75rem}.oh-card--lg{width:3.5rem;height:4.375rem}
-  .oh__foot{left:1rem;right:1rem;bottom:1rem}
-  .oh__ctas .btn{padding:10px 16px;font-size:13px}
-}
+    }
 @media(prefers-reduced-motion:reduce){
   .oh__ring,.oh-upright{animation:none!important}
 }
 
-.oh__more{align-self:center;font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:4px;margin-right:8px;white-space:nowrap}
-.oh__more:hover{color:var(--red)}
 .back{margin-top:40px}
 .foot__links{display:flex;gap:10px 20px;flex-wrap:wrap;font-size:14px}
 .foot__links a:hover{color:var(--sky)}
 @media(max-width:767px){
-  .oh__ctas{flex-wrap:wrap;justify-content:center}
-  .oh__ctas .btn{white-space:nowrap}
-  .oh__more{width:100%;text-align:center;margin:0 0 2px}
+      }
+@media(max-width:479px){}
+
+/* ===== v3: grid sutil, ancho máx 1440 ===== */
+.oh::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(rgba(23,24,28,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(23,24,28,.045) 1px,transparent 1px);
+  background-size:56px 56px;background-position:center center;
+  -webkit-mask-image:radial-gradient(ellipse 70% 65% at 50% 52%,#000 25%,transparent 80%);mask-image:radial-gradient(ellipse 70% 65% at 50% 52%,#000 25%,transparent 80%)}
+.oh__stage{max-width:1440px;margin:0 auto}
+.wrap{max-width:1440px}
+.nav__inner{max-width:1440px}
+.trust{max-width:1440px}
+.cta__card{max-width:1408px;margin:0 auto}
+
+/* menú: evitar que se parta en pantallas medias */
+.nav__links a{white-space:nowrap}
+@media(max-width:1180px){
+  .nav__links{position:fixed;inset:84px 16px auto;flex-direction:column;gap:0;background:var(--paper);border-radius:var(--r-md);box-shadow:var(--shadow);padding:12px 24px;display:none}
+  .nav__links.open{display:flex}
+  .nav__links a{padding:14px 0;border-bottom:1px solid var(--bone)}
+  .nav__cta{display:none}
+  .burger{display:block}
 }
-/* barra inferior del hero: degradado para que los botones se lean sobre las tarjetas */
-.oh__foot{left:0;right:0;bottom:0;padding:3rem 2rem 1.75rem;background:linear-gradient(to top,var(--bone) 45%,rgba(246,246,242,0))}
-@media(max-width:479px){.oh__foot{left:0;right:0;bottom:0;padding:3rem 1rem 1rem}}
-.oh__foot{justify-content:center}
+
+/* imagen de work from home: ocupar siempre todo el marco */
+.ph--wfh img{position:absolute;inset:0}
+@media(max-width:991px){.ph--wfh{min-height:0;aspect-ratio:1/1}}
+
+/* tablet (601–991px): proporciones más contenidas */
+@media(max-width:991px){
+  .ph--star,.ph--wfh{max-width:560px;width:100%;margin-inline:auto}
+  .posts{grid-template-columns:1fr 1fr;gap:32px 24px}
+  .post:first-child{grid-column:1/-1}
+  .post:first-child .ph--post{aspect-ratio:16/9}
+  .review{min-height:0;gap:32px}
+}
+@media(max-width:600px){
+  .posts{grid-template-columns:1fr}
+  .post:first-child .ph--post{aspect-ratio:4/3}
+}
