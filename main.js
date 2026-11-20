@@ -14,7 +14,7 @@ const io = new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
 }), { threshold: .15 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-document.querySelectorAll('.card,.post,.feat__card,.review').forEach(el => { el.classList.add('fade'); io.observe(el); });
+document.querySelectorAll('.card,.post,.feat__card,.review,.cat,.way').forEach(el => { el.classList.add('fade'); io.observe(el); });
 
 // Carrusel de productos
 const cards = document.getElementById('cards');
