@@ -59,6 +59,7 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 .nav{position:fixed;inset:16px 16px auto;z-index:50}
 .nav__inner{max-width:1560px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:10px 12px 10px 24px;background:var(--veil);backdrop-filter:blur(14px);border-radius:var(--r-pill);box-shadow:var(--shadow)}
 .logo{display:flex;align-items:center;gap:12px;font-weight:600}
+.logo img{height:36px;width:auto}
 .logo__mark{background:var(--red);color:#fff;font-weight:800;letter-spacing:.2em;padding:6px 10px 6px 14px;font-size:14px;border-radius:6px}
 .logo__txt{letter-spacing:.2em;font-size:12px;text-transform:uppercase}
 .logo--light .logo__mark{font-size:32px;padding:14px 12px 14px 22px;border-radius:0}
@@ -201,3 +202,18 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
   *{animation:none!important;transition:none!important}
   .reveal:not(.in),.fade{opacity:1;transform:none}
 }
+
+/* imágenes reales */
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph--showroom{background:var(--bone)}
+.ph--prod{background:#fff;border:1px solid var(--bone)}
+.ph--prod img{object-fit:contain;padding:8%}
+.ph--post{background:var(--oat)}
+.marquee__track img{height:48px;width:auto;flex:none}
+.logos{align-items:center}
+.logos li{display:flex}
+.logos img{height:34px;width:auto;max-width:150px;opacity:.65;filter:grayscale(1);transition:opacity .2s var(--ease)}
+.logos img:hover{opacity:1}
+.foot__brand .logo img{height:44px}
+.ph--showroom img{position:absolute;inset:0}
