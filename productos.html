@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Productos — Distrito HM | Sillas, mesas y mobiliario de oficina Herman Miller y Knoll</title>
+<meta name="description" content="Catálogo de Distrito HM, Associate Dealer oficial MillerKnoll: sillas de trabajo, mesas, zonas lounge, almacenamiento, acústica y repuestos de Herman Miller, Knoll, HAY y más.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Mona+Sans:wdth,wght@75..125,200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-products">
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="logo" href="index.html" aria-label="Distrito HM"><img src="assets/logos/dhm-mark.png" alt="Distrito HM" height="36"></a>
+    <nav class="nav__links" id="navLinks" aria-label="Principal">
+      <a href="productos.html" aria-current="page">Productos</a>
+      <a href="index.html#empresas">Empresas</a>
+      <a href="index.html#wfh">Work from home</a>
+      <a href="index.html#marcas">Marcas</a>
+      <a href="index.html#showroom">Showroom</a>
+      <a href="index.html#blog">Blog y podcast</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="btn btn--outline" href="index.html#wfh">Tienda</a>
+      <a class="btn btn--dark" href="index.html#showroom">Pedir cita <i>→</i></a>
+    </div>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="phead grid-light">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Inicio</a> <span>/</span> Productos</p>
+    <h1 class="display reveal"><span>Productos</span></h1>
+    <p class="body">Mobiliario de oficina premium de Herman Miller, Knoll, HAY y más marcas, con el respaldo del distribuidor oficial MillerKnoll en España.</p>
+  </div>
+</section>
+
+<section class="section catalog">
+  <div class="wrap">
+    <div class="toolbar">
+      <div class="chips" id="chips" role="tablist" aria-label="Categorías"></div>
+      <div class="tools">
+        <label class="search"><span class="sr">Buscar</span><input id="q" type="search" placeholder="Buscar producto…" autocomplete="off"></label>
+        <label class="select"><span class="sr">Marca</span><select id="brand"></select></label>
+      </div>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="pgrid" id="grid"></div>
+    <div class="empty" id="empty" hidden>
+      <h2 class="h-md-l">No hay resultados</h2>
+      <p class="body">Prueba con otra categoría o marca, o cuéntanos qué buscas y te asesoramos.</p>
+      <a class="btn btn--dark" href="index.html#contacto">Hablar con un especialista <i>→</i></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--oat">
+  <div class="wrap">
+    <div class="split help">
+      <div>
+        <p class="eyebrow">Asesoría</p>
+        <h2 class="h-lg reveal">¿No sabes qué silla o mesa te conviene?</h2>
+        <p class="body">Ven al showroom de Madrid y pruébalas en persona, o cuéntanos tu caso y un especialista te recomienda la mejor opción para tu espacio.</p>
+        <div class="hero__actions">
+          <a class="btn btn--dark" href="index.html#showroom">Pedir cita en el showroom <i>→</i></a>
+          <a class="btn btn--outline" href="index.html#contacto">Escríbenos</a>
+        </div>
+      </div>
+      <ul class="shop-links shop-links--light">
+        <li><a href="index.html#empresas"><b>Proyecto para empresas</b><span>Oficinas completas con Living Office</span><i>→</i></a></li>
+        <li><a href="index.html#wfh"><b>Work from home</b><span>Tienda online, promociones y outlet</span><i>→</i></a></li>
+        <li><a href="#repuestos" data-cat="repuestos"><b>Repuestos para sillas</b><span>Recambios para tu silla Herman Miller</span><i>→</i></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="section section--dark grid-dark" id="contacto">
+  <div class="wrap foot foot--slim">
+    <div class="foot__brand">
+      <a class="logo logo--light" href="index.html"><img src="assets/logos/dhm-millerknoll-white.svg" alt="Distrito HM · MillerKnoll Associate Dealer" height="44"></a>
+      <p class="note">MillerKnoll Associate Dealer Spain</p>
+    </div>
+    <div class="foot__where">
+      <p class="eyebrow eyebrow--red">Dónde estamos</p>
+      <address>
+        <p>Madrid <a href="tel:+34914917887">+34 914 917 887</a></p>
+        <p>Barcelona <a href="tel:+34933033885">+34 933 033 885</a></p>
+        <p><a href="mailto:info@distritohm.com">info@distritohm.com</a></p>
+      </address>
+    </div>
+    <div class="foot__where">
+      <p class="eyebrow eyebrow--red">Showroom</p>
+      <address><p>Calle Albasanz, 15<br>Edificio A, Planta Baja<br>Madrid, 28037</p></address>
+    </div>
+  </div>
+  <div class="wrap bar">
+    <p><a href="#">Aviso legal y política de privacidad</a> · <a href="#">Condiciones de compra</a> · <a href="#">Política de cookies</a></p>
+    <p>2016 – 2026 · Todos los derechos reservados · @DistritoHM</p>
+  </div>
+</footer>
+
+</main>
+<script src="main.js"></script>
+<script src="productos.js"></script>
+</body>
+</html>

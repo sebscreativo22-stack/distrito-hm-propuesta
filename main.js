@@ -18,12 +18,13 @@ document.querySelectorAll('.card,.post,.feat__card,.review,.cat,.way').forEach(e
 
 // Carrusel de productos
 const cards = document.getElementById('cards');
-document.querySelectorAll('.circle').forEach(b => b.addEventListener('click', () => {
+if (cards) document.querySelectorAll('.circle').forEach(b => b.addEventListener('click', () => {
   cards.scrollBy({ left: b.dataset.dir * (cards.firstElementChild.offsetWidth + 32), behavior: 'smooth' });
 }));
 
 // Formulario (demo: conectar a backend / servicio de formularios)
-document.getElementById('form').addEventListener('submit', e => {
+const form = document.getElementById('form');
+if (form) form.addEventListener('submit', e => {
   e.preventDefault();
   if (!e.target.checkValidity()) { e.target.reportValidity(); return; }
   document.getElementById('formOk').hidden = false;
