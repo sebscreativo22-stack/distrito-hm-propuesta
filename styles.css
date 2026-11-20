@@ -404,3 +404,4 @@ button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
 /* barra inferior del hero: degradado para que los botones se lean sobre las tarjetas */
 .oh__foot{left:0;right:0;bottom:0;padding:3rem 2rem 1.75rem;background:linear-gradient(to top,var(--bone) 45%,rgba(246,246,242,0))}
 @media(max-width:479px){.oh__foot{left:0;right:0;bottom:0;padding:3rem 1rem 1rem}}
+.oh__foot{justify-content:center}
