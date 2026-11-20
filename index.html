@@ -34,24 +34,33 @@
 
 <main id="top">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero__card">
-    <img class="hero__img" src="assets/img/showroom.jpg" alt="Showroom de Distrito HM con sillas Herman Miller">
-    <div class="hero__shade"></div>
-    <div class="hero__copy">
-      <p class="pill pill--glass">Associate Dealer oficial MillerKnoll en España</p>
-      <h1 class="display reveal"><span>Herman Miller y diseño de oficina premium,</span> <span>con el respaldo del distribuidor oficial.</span></h1>
-      <p class="hero__sub">Sillas, mesas, zonas lounge y más para equipar tu empresa o tu oficina en casa. Pruébalo en nuestro showroom de Madrid.</p>
-      <div class="hero__actions">
-        <a class="btn btn--light" href="#empresas">Equipa tu empresa <i>→</i></a>
-        <a class="btn btn--ghost" href="#wfh">Compra para tu casa</a>
+<!-- HERO · órbita de producto -->
+<section class="orbit" aria-label="Sillas y espacios de Distrito HM orbitando alrededor del titular">
+  <div class="orbit__runway" id="orbitRunway">
+    <div class="orbit__pin grid-dark" id="orbitPin">
+      <div class="orbit__ring">
+        <div class="orbit-card" style="--i:0"><div class="orbit-face orbit-face--chair"><img src="assets/img/mirra2.jpg" alt="Silla Mirra 2" width="380" height="252"></div></div>
+        <div class="orbit-card" style="--i:1"><div class="orbit-face orbit-face--photo"><img src="assets/img/showroom.jpg" alt="Showroom de Distrito HM" width="380" height="252"></div></div>
+        <div class="orbit-card" style="--i:2"><div class="orbit-face orbit-face--chair"><img src="assets/img/aeron.jpg" alt="Silla Aeron" width="380" height="252"></div></div>
+        <div class="orbit-card" style="--i:3"><div class="orbit-face orbit-face--photo"><img src="assets/img/living.jpg" alt="Zona lounge Knoll" width="380" height="252" loading="lazy"></div></div>
+        <div class="orbit-card" style="--i:4"><div class="orbit-face orbit-face--chair"><img src="assets/img/cosm.jpg" alt="Silla Cosm" width="380" height="252" loading="lazy"></div></div>
+        <div class="orbit-card" style="--i:5"><div class="orbit-face orbit-face--photo"><img src="assets/img/greyfox-sympatico.jpg" alt="Espacio de trabajo con mobiliario Greyfox" width="380" height="252" loading="lazy"></div></div>
+        <div class="orbit-card" style="--i:6"><div class="orbit-face orbit-face--chair"><img src="assets/img/embody.jpg" alt="Silla Embody" width="380" height="252" loading="lazy"></div></div>
+        <div class="orbit-card" style="--i:7"><div class="orbit-face orbit-face--photo"><img src="assets/img/wilkes.jpg" alt="Sofá modular Wilkes" width="380" height="252" loading="lazy"></div></div>
+        <div class="orbit-card" style="--i:8"><div class="orbit-face orbit-face--chair"><img src="assets/img/sayl.jpg" alt="Silla Sayl" width="380" height="252" loading="lazy"></div></div>
+        <div class="orbit-card" style="--i:9"><div class="orbit-face orbit-face--chair"><img src="assets/img/verus.jpg" alt="Silla Verus" width="380" height="252" loading="lazy"></div></div>
       </div>
+      <div class="orbit__center">
+        <p class="pill pill--glass">Associate Dealer oficial MillerKnoll en España</p>
+        <h1 class="orbit__title"><span class="dim">Herman Miller</span><br>y diseño de oficina premium</h1>
+        <p class="orbit__sub">Sillas, mesas y espacios de trabajo para tu empresa o tu casa. Pruébalo en nuestro showroom de Madrid.</p>
+        <div class="hero__actions">
+          <a class="btn btn--light" href="#empresas">Equipa tu empresa <i>→</i></a>
+          <a class="btn btn--ghost" href="#wfh">Compra para tu casa</a>
+        </div>
+      </div>
+      <a class="orbit__hint" href="#vias" aria-label="Seguir bajando">Desliza <i>↓</i></a>
     </div>
-    <a class="hero__chip" href="#destacado" aria-label="Ver Mirra 2">
-      <img src="assets/img/mirra2.jpg" alt="Silla Herman Miller Mirra 2">
-      <span><small>Silla destacada</small><b>Mirra 2</b></span>
-    </a>
   </div>
   <ul class="trust">
     <li><b>Herman Miller · Knoll · HAY</b><span>y el resto del grupo MillerKnoll</span></li>
@@ -315,5 +324,6 @@
 
 </main>
 <script src="main.js"></script>
+<script src="orbit.js"></script>
 </body>
 </html>
