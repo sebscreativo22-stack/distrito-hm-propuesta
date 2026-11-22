@@ -127,10 +127,13 @@ document.addEventListener('click', e => {
   // acciones de compra -> pantalla de propuesta
   if (a.hasAttribute('data-proposal')) { e.preventDefault(); openModal(a); return; }
   const href = a.getAttribute('href') || '';
-  // enlaces de ejemplo (sin destino en la propuesta)
-  if (href === '#') { e.preventDefault(); showToast('Enlace de ejemplo: en la web final llevará a esta sección.'); return; }
-  // enlaces externos al sitio original: nueva pestaña
-  if (/^https?:/i.test(href) && new URL(href).host !== location.host) { a.target = '_blank'; a.rel = 'noopener'; }
+  // Todo enlace sin destino dentro de la propuesta (vacío, "#" o hacia el sitio original / redes) abre la pantalla de contacto
+  if (href === '' || href === '#') { e.preventDefault(); openModal(a); return; }
+  if (/^https?:/i.test(href)) {
+    let u; try { u = new URL(href); } catch (_) { u = null; }
+    const isDoc = u && /\.pdf$/i.test(u.pathname);
+    if (u && u.host !== location.host && !isDoc && !/(^|\.)wa\.me$/.test(u.host)) { e.preventDefault(); openModal(a); return; }
+  }
 });
 
 // El formulario no envía nada en la propuesta: abre la pantalla de contacto
