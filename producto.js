@@ -80,7 +80,7 @@
   const ctaHtml = () => {
     const v = hasVar ? current() : null;
     const dis = hasVar && (!v || !v.in_stock);
-    return `<a class="btn btn--dark pdp__buy${dis ? ' is-off' : ''}" href="${esc(dis ? '#' : shopUrl())}" ${dis ? 'aria-disabled="true"' : 'target="_blank" rel="noopener"'}>${hasVar ? 'Comprar en la tienda' : 'Configurar en la tienda'} <i>→</i></a>
+    return `<a class="btn btn--dark pdp__buy${dis ? ' is-off' : ''}" href="#comprar" data-proposal ${dis ? 'aria-disabled="true"' : ''}>${hasVar ? 'Comprar en la tienda' : 'Configurar en la tienda'} <i>→</i></a>
       <a class="btn btn--outline" href="index.html#contacto">Pedir presupuesto</a>`;
   };
   const images = () => {
@@ -137,7 +137,6 @@
     }
     const t = e.target.closest('.thumb');
     if (t) { thumbIdx = +t.dataset.i; paint(); return; }
-    if (e.target.closest('.pdp__buy.is-off')) e.preventDefault();
   });
 
   // ---------- detalles ----------

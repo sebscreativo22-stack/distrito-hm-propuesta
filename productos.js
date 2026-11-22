@@ -11,8 +11,11 @@ const CATS = [
   { id: 'repuestos', label: 'Repuestos' },
 ];
 const HM = 'Herman Miller', KN = 'Knoll';
+const REAL = { 'Bertoia Diamond': 'silla-diamond-bertoia', 'KN02 / KN03 Lissoni': 'kn02-y-kn03-coleccion-kn', 'Passport': 'mesa-trabajo-passport-sit-stand' };
+const CATURL = { sillas: 'sillas-de-trabajo', multiuso: 'sillas-multiuso', mesas: 'mesas-individuales', lounge: 'salas-lounge-descanso-oficinas-trabajo', almacenamiento: 'almacenamiento', acustica: 'sonido-aislamiento-oficinas', equipamiento: 'equipamiento-oficinas' };
+const CATNAME = { 'Taburetes': 'taburetes-oficinas-trabajo', 'Knot': 'mesas-auxiliares' };
 const FICHAS = { 'Mirra 2': 'mirra-2', 'Aeron': 'aeron', 'Cosm': 'cosm', 'Embody': 'embody', 'Sayl': 'sayl' };
-const P = (cat, name, brand, img, type, extra = {}) => ({ cat, name, brand, img, type, href: FICHAS[name] ? 'producto.html?p=' + FICHAS[name] : '#', ...extra });
+const P = (cat, name, brand, img, type, extra = {}) => ({ cat, name, brand, img, type, href: FICHAS[name] ? 'producto.html?p=' + FICHAS[name] : REAL[name] ? 'https://distritohm.com/portfolio-productos/' + REAL[name] + '/' : 'https://distritohm.com/productos/' + (CATNAME[name] || CATURL[cat]) + '/', ...extra });
 const PRODUCTS = [
   P('sillas', 'Mirra 2', HM, 'mirra2', 'Silla de trabajo', { star: true }),
   P('sillas', 'Aeron', HM, 'aeron', 'Silla de trabajo'),

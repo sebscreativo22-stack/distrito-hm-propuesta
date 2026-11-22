@@ -510,3 +510,33 @@ button.opt:hover{border-color:var(--ink)}
   .video p{bottom:14px;font-size:.875rem}
   .video small{display:none}
 }
+
+/* ===== Propuesta: pantalla de contacto + aviso ===== */
+.pdp__buy.is-off{pointer-events:auto}
+html.pm-open{overflow:hidden}
+.pmodal{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:20px;opacity:0;transition:opacity .22s var(--ease)}
+.pmodal.on{opacity:1}
+.pmodal[hidden]{display:none}
+.pmodal__bg{position:absolute;inset:0;background:rgba(14,14,14,.62);backdrop-filter:blur(6px)}
+.pmodal__card{position:relative;width:100%;max-width:520px;max-height:calc(100dvh - 40px);overflow:auto;background:var(--paper);border-radius:var(--r-big);padding:48px 40px 32px;box-shadow:0 30px 80px rgba(0,0,0,.35);outline:0;transform:translateY(16px) scale(.98);transition:transform .35s var(--ease-rev)}
+.pmodal.on .pmodal__card{transform:none}
+.pmodal__x{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:50%;background:var(--bone);transition:background .2s var(--ease)}
+.pmodal__x:hover{background:var(--oat)}
+.pmodal__x span{position:absolute;left:13px;right:13px;top:21px;height:2px;background:var(--ink);transform:rotate(45deg)}
+.pmodal__x span+span{transform:rotate(-45deg)}
+.pmodal__title{font-weight:600;font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.02;letter-spacing:-.035em;margin-bottom:16px}
+.pmodal__text{font-family:var(--serif);font-size:1.0625rem;line-height:1.55;color:#33343a;margin-bottom:28px}
+.pmodal__text a{color:var(--red);text-decoration:underline;text-underline-offset:3px;font-weight:500;white-space:nowrap}
+.pmodal__actions{display:grid;gap:12px}
+.pmodal__actions .btn{justify-content:center;padding:16px 24px;font-size:.9375rem}
+.pmodal__wa{background:#25d366;color:#07301a}
+.pmodal__wa:hover{background:#1fbd5a;color:#07301a}
+.pmodal__meta{margin-top:18px;text-align:center;font-size:.8125rem;color:#6b6c72}
+.pmodal__back{display:block;margin:12px auto 0;padding:10px;font-size:.875rem;font-weight:600;text-decoration:underline;text-underline-offset:4px;color:var(--ink)}
+.ptoast{position:fixed;left:50%;bottom:24px;z-index:210;transform:translate(-50%,24px);max-width:calc(100vw - 32px);padding:14px 22px;border-radius:var(--r-pill);background:var(--ink);color:#fff;font-size:.875rem;font-weight:500;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .25s var(--ease),transform .3s var(--ease-rev)}
+.ptoast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:520px){
+  .pmodal{padding:12px;align-items:end}
+  .pmodal__card{padding:44px 24px 20px;border-radius:28px}
+}
+@media(prefers-reduced-motion:reduce){.pmodal,.pmodal__card,.ptoast{transition:none}}

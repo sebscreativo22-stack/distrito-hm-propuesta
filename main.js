@@ -22,11 +22,87 @@ if (cards) document.querySelectorAll('.circle').forEach(b => b.addEventListener(
   cards.scrollBy({ left: b.dataset.dir * (cards.firstElementChild.offsetWidth + 32), behavior: 'smooth' });
 }));
 
-// Formulario (demo: conectar a backend / servicio de formularios)
-const form = document.getElementById('form');
-if (form) form.addEventListener('submit', e => {
-  e.preventDefault();
-  if (!e.target.checkValidity()) { e.target.reportValidity(); return; }
-  document.getElementById('formOk').hidden = false;
-  e.target.reset();
+// ===== Propuesta: pantalla "quiero esta web", aviso de enlaces de ejemplo y enlaces externos =====
+const PROPOSAL = {
+  email: 'contacto@growth-digital.es',
+  phone: '+34 611 93 04 25',
+  wa: 'https://wa.me/34611930425?text=' + encodeURIComponent('Vi la propuesta de Distrito HM y la quiero'),
+  mail: 'mailto:contacto@growth-digital.es?subject=' + encodeURIComponent('Propuesta web Distrito HM') + '&body=' + encodeURIComponent('Hola, he visto la propuesta de Distrito HM y la quiero.'),
+};
+
+const modal = document.createElement('div');
+modal.className = 'pmodal';
+modal.hidden = true;
+modal.innerHTML = `
+  <div class="pmodal__bg" data-close></div>
+  <div class="pmodal__card" role="dialog" aria-modal="true" aria-labelledby="pmTitle" aria-describedby="pmText" tabindex="-1">
+    <button type="button" class="pmodal__x" data-close aria-label="Cerrar"><span></span><span></span></button>
+    <p class="eyebrow">Propuesta de diseño web</p>
+    <h2 id="pmTitle" class="pmodal__title">¿Te gusta esta web?</h2>
+    <p id="pmText" class="pmodal__text">Esto es una <b>propuesta</b> de Growth Digital: la tienda y las compras no están activas. Si quieres esta web para Distrito HM, escríbenos a <a href="${PROPOSAL.mail}">${PROPOSAL.email}</a> o por WhatsApp.</p>
+    <div class="pmodal__actions">
+      <a class="btn pmodal__wa" href="${PROPOSAL.wa}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" width="20" height="20" aria-hidden="true"><path d="M16 4a12 12 0 0 0-10.3 18.1L4 28l6.1-1.6A12 12 0 1 0 16 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 11c0 5 4 9 9 9l1.5-2.5-3-1.5-1.2 1.2a6 6 0 0 1-3-3l1.2-1.2L15 9.5 12 11z" fill="currentColor"/></svg>
+        Escribir por WhatsApp</a>
+      <a class="btn btn--outline" href="${PROPOSAL.mail}">Enviar un email</a>
+    </div>
+    <p class="pmodal__meta">WhatsApp ${PROPOSAL.phone} · ${PROPOSAL.email}</p>
+    <button type="button" class="pmodal__back" data-close>Seguir viendo la web</button>
+  </div>`;
+document.body.appendChild(modal);
+
+const toast = document.createElement('div');
+toast.className = 'ptoast';
+toast.setAttribute('role', 'status');
+toast.setAttribute('aria-live', 'polite');
+document.body.appendChild(toast);
+let toastTimer;
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add('on');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove('on'), 3200);
+}
+
+let lastFocus = null;
+function openModal(trigger) {
+  lastFocus = trigger || document.activeElement;
+  modal.hidden = false;
+  document.documentElement.classList.add('pm-open');
+  requestAnimationFrame(() => { modal.classList.add('on'); modal.querySelector('.pmodal__card').focus(); });
+}
+function closeModal() {
+  modal.classList.remove('on');
+  document.documentElement.classList.remove('pm-open');
+  setTimeout(() => { modal.hidden = true; }, 220);
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+document.addEventListener('keydown', e => {
+  if (modal.hidden) return;
+  if (e.key === 'Escape') { closeModal(); return; }
+  if (e.key === 'Tab') {
+    const f = [...modal.querySelectorAll('a[href],button')].filter(x => x.offsetParent !== null);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && (document.activeElement === first || document.activeElement === modal.querySelector('.pmodal__card'))) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
 });
+
+document.addEventListener('click', e => {
+  if (e.target.closest('[data-close]')) { closeModal(); return; }
+  const a = e.target.closest('a');
+  if (!a) return;
+  if (a.closest('.pmodal')) return;
+  // acciones de compra -> pantalla de propuesta
+  if (a.hasAttribute('data-proposal')) { e.preventDefault(); openModal(a); return; }
+  const href = a.getAttribute('href') || '';
+  // enlaces de ejemplo (sin destino en la propuesta)
+  if (href === '#') { e.preventDefault(); showToast('Enlace de ejemplo: en la web final llevará a esta sección.'); return; }
+  // enlaces externos al sitio original: nueva pestaña
+  if (/^https?:/i.test(href) && new URL(href).host !== location.host) { a.target = '_blank'; a.rel = 'noopener'; }
+});
+
+// El formulario no envía nada en la propuesta: abre la pantalla de contacto
+const form = document.getElementById('form');
+if (form) form.addEventListener('submit', e => { e.preventDefault(); openModal(form.querySelector('button[type=submit]')); });
