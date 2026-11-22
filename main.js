@@ -27,6 +27,7 @@ const PROPOSAL = {
   email: 'contacto@growth-digital.es',
   phone: '+34 611 93 04 25',
   wa: 'https://wa.me/34611930425?text=' + encodeURIComponent('Vi la propuesta de Distrito HM y la quiero'),
+  gmail: 'https://mail.google.com/mail/?view=cm&fs=1&to=contacto@growth-digital.es&su=' + encodeURIComponent('Propuesta web Distrito HM') + '&body=' + encodeURIComponent('Hola, he visto la propuesta de Distrito HM y la quiero.'),
   mail: 'mailto:contacto@growth-digital.es?subject=' + encodeURIComponent('Propuesta web Distrito HM') + '&body=' + encodeURIComponent('Hola, he visto la propuesta de Distrito HM y la quiero.'),
 };
 
@@ -44,9 +45,11 @@ modal.innerHTML = `
       <a class="btn pmodal__wa" href="${PROPOSAL.wa}" target="_blank" rel="noopener">
         <svg viewBox="0 0 32 32" width="20" height="20" aria-hidden="true"><path d="M16 4a12 12 0 0 0-10.3 18.1L4 28l6.1-1.6A12 12 0 1 0 16 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 11c0 5 4 9 9 9l1.5-2.5-3-1.5-1.2 1.2a6 6 0 0 1-3-3l1.2-1.2L15 9.5 12 11z" fill="currentColor"/></svg>
         Escribir por WhatsApp</a>
-      <a class="btn btn--outline" href="${PROPOSAL.mail}">Enviar un email</a>
+      <button type="button" class="btn btn--outline" id="pmMail">Enviar un email</button>
     </div>
-    <p class="pmodal__meta">WhatsApp ${PROPOSAL.phone} · ${PROPOSAL.email}</p>
+    <p class="pmodal__fallback" id="pmFallback" hidden role="status"></p>
+    <p class="pmodal__meta">¿No se abre tu correo? <a href="${PROPOSAL.gmail}" target="_blank" rel="noopener">Abrir Gmail</a> · <button type="button" class="pmodal__copy" id="pmCopy">Copiar email</button></p>
+    <p class="pmodal__meta pmodal__meta--2">WhatsApp ${PROPOSAL.phone}</p>
     <button type="button" class="pmodal__back" data-close>Seguir viendo la web</button>
   </div>`;
 document.body.appendChild(modal);
@@ -63,6 +66,33 @@ function showToast(msg) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => toast.classList.remove('on'), 3200);
 }
+
+async function copyText(t) {
+  try { await navigator.clipboard.writeText(t); return true; } catch (_) {}
+  const ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;opacity:0;top:0';
+  document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (_) {} ta.remove(); return ok;
+}
+const pmFallback = modal.querySelector('#pmFallback');
+const pmCopy = modal.querySelector('#pmCopy');
+modal.querySelector('#pmMail').addEventListener('click', () => {
+  let opened = false; const seen = () => { opened = true; };
+  window.addEventListener('blur', seen, { once: true });
+  document.addEventListener('visibilitychange', seen, { once: true });
+  window.addEventListener('pagehide', seen, { once: true });
+  window.location.href = PROPOSAL.mail;
+  setTimeout(async () => {
+    window.removeEventListener('blur', seen); document.removeEventListener('visibilitychange', seen); window.removeEventListener('pagehide', seen);
+    if (opened) return;
+    const ok = await copyText(PROPOSAL.email);
+    pmFallback.hidden = false;
+    pmFallback.textContent = ok ? `No se abrió tu correo. Copiamos ${PROPOSAL.email}: pégalo en tu app de correo.` : `No se abrió tu correo. Escríbenos a ${PROPOSAL.email}.`;
+  }, 1200);
+});
+pmCopy.addEventListener('click', async () => {
+  const ok = await copyText(PROPOSAL.email);
+  pmCopy.textContent = ok ? '¡Copiado!' : PROPOSAL.email;
+  setTimeout(() => { pmCopy.textContent = 'Copiar email'; }, 2200);
+});
 
 let lastFocus = null;
 function openModal(trigger) {
