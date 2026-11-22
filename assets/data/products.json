@@ -1,0 +1,1388 @@
+{
+ "mirra-2": {
+  "slug": "mirra-2",
+  "name": "Mirra 2",
+  "sku": "MRF123AW",
+  "url": "https://distritohm.com/tienda/mirra-2/",
+  "category": "Sillas de trabajo",
+  "brand": "Herman Miller",
+  "designer": "Diseñada por Studio 7.5",
+  "delivery_note": "Para entregas en el domicilio es necesario pedir presupuesto personalizado",
+  "color_note": "Los colores en las imágenes son meramente orientativos",
+  "notes": [],
+  "description": [
+   "Pistón de altura standard (401-528mm),con limitador de la reclinación e inclinación negativa, brazos totalmente ajustables, en acabado vinílico, con asiento ajustable en profundidad, todo incluido.",
+   "A elegir Respaldo tipo Butterfly (con capa de tela) o Triflex II (sin tela), y una amplia gama de color para estructura, asiento y respaldo."
+  ],
+  "specs": [
+   [
+    "Peso",
+    "19 kg"
+   ],
+   [
+    "Altura Total",
+    "108,58 cm"
+   ],
+   [
+    "Profundidad",
+    "47 de asiento"
+   ],
+   [
+    "Ancho",
+    "76,2 cm"
+   ],
+   [
+    "Peso máximo del usuario",
+    "159 kg"
+   ]
+  ],
+  "price_from": 850.0,
+  "price_to": 1287.0,
+  "offer_count": 23,
+  "options": [
+   {
+    "key": "attribute_pa_mirra2-respaldo",
+    "label": "Respaldo",
+    "options": [
+     {
+      "value": "butterfly",
+      "label": "Butterfly",
+      "swatch": "assets/products/mirra-2/sw-respaldo-butterfly.jpg"
+     },
+     {
+      "value": "triflex-ii",
+      "label": "TriFlex II",
+      "swatch": "assets/products/mirra-2/sw-respaldo-triflex-ii.jpg"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_mirra2-base-estructura",
+    "label": "Base y estructura",
+    "options": [
+     {
+      "value": "alpine",
+      "label": "Alpine",
+      "swatch": "assets/products/mirra-2/sw-estructura-alpine.jpg"
+     },
+     {
+      "value": "graphite-graphite",
+      "label": "Grafito / Grafito",
+      "swatch": "assets/products/mirra-2/sw-estructura-graphite-graphite.jpg"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_mirra2-color",
+    "label": "Color (respaldo y asiento)",
+    "options": [
+     {
+      "value": "alpine",
+      "label": "Alpine",
+      "swatch": "assets/products/mirra-2/sw-color-alpine.jpg"
+     },
+     {
+      "value": "cordovan",
+      "label": "Cordovan",
+      "swatch": "assets/products/mirra-2/sw-color-cordovan.jpg"
+     },
+     {
+      "value": "graphite",
+      "label": "Graphite",
+      "swatch": "assets/products/mirra-2/sw-color-graphite.jpg"
+     },
+     {
+      "value": "ocre",
+      "label": "Ocre",
+      "swatch": "assets/products/mirra-2/sw-color-ocre.jpg"
+     },
+     {
+      "value": "olive",
+      "label": "Olive",
+      "swatch": "assets/products/mirra-2/sw-color-olive.jpg"
+     },
+     {
+      "value": "ultramarino",
+      "label": "Ultramarino",
+      "swatch": "assets/products/mirra-2/sw-color-ultramarino.jpg"
+     }
+    ]
+   }
+  ],
+  "variations": [
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "graphite"
+    },
+    "price": 1087.5,
+    "stock": "PRODUCTO AGOTADO",
+    "in_stock": false,
+    "img": "assets/products/mirra-2/v-1026c242.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "alpine"
+    },
+    "price": 1175.25,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-73ede286.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "alpine"
+    },
+    "price": 1137,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-ec797e9f.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "graphite"
+    },
+    "price": 850,
+    "stock": "ENTREGA PREFERENTE (5-7 Días) [Solo 5 en stock] (puede reservarse)",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-15fd1b62.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "alpine"
+    },
+    "price": 1142.25,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-a9084e18.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "graphite"
+    },
+    "price": 1104,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-229e3492.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "alpine"
+    },
+    "price": 1090.5,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-e9f61142.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "cordovan"
+    },
+    "price": 1287,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-ad4f8d6f.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "ocre"
+    },
+    "price": 1261.5,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-966021fc.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "olive"
+    },
+    "price": 1261.5,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-636220e5.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "ultramarino"
+    },
+    "price": 925,
+    "stock": "ENTREGA PREFERENTE (5-7 Días) [Solo 2 en stock] (puede reservarse)",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-bb971f46.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "cordovan"
+    },
+    "price": 1177.5,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-2c451b78.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "ultramarino"
+    },
+    "price": 1177.5,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-8043fe54.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "ocre"
+    },
+    "price": 1177.5,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-abde4156.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "alpine",
+     "attribute_pa_mirra2-color": "olive"
+    },
+    "price": 1177.5,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-b67c7032.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "cordovan"
+    },
+    "price": 1209.75,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-b5a0a039.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "ocre"
+    },
+    "price": 1209.75,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-0a686fda.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "olive"
+    },
+    "price": 1209.75,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-e1bece93.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "butterfly",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "ultramarino"
+    },
+    "price": 1209.75,
+    "stock": "ENTREGA PREFERENTE (5-7 Días)",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-781f543c.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "cordovan"
+    },
+    "price": 1125.75,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-b029e7ab.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "ocre"
+    },
+    "price": 1125.75,
+    "stock": "ENTREGA PREFERENTE (5-7 Días)",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-926d9f7e.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "olive"
+    },
+    "price": 1125.75,
+    "stock": "ENTREGA PREFERENTE (5-7 Días)",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-719eed03.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_mirra2-respaldo": "triflex-ii",
+     "attribute_pa_mirra2-base-estructura": "graphite-graphite",
+     "attribute_pa_mirra2-color": "ultramarino"
+    },
+    "price": 1125.75,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/mirra-2/v-5e8b1086.jpg"
+   }
+  ],
+  "image": "assets/products/mirra-2/main.jpg",
+  "points_image": "assets/products/mirra-2/puntos.jpg",
+  "features": [
+   {
+    "n": "1",
+    "title": "Inclinación Harmonic ™",
+    "text": "Combina el confort del tejido con la fuerza del polímero para ofrecer una adecuada distribución de la presión desde el sacro hasta la región toracica de la columna."
+   },
+   {
+    "n": "3",
+    "title": "Respaldo TriFlex ®",
+    "text": "Sostiene adecuadamente la base de la columna (zona sacra) para mantener la pelvis ligeramente inclinada hacia adelante, una posición saludable que evita el encorvamiento de la espalda y la fatiga muscular."
+   },
+   {
+    "n": "5",
+    "title": "Soporte Lumbar ajustable",
+    "text": "Provee soporte y confort adicional a la región lumbar."
+   },
+   {
+    "n": "6",
+    "title": "Suspension AirWeave ™",
+    "text": "El asiento de Mirra2, se adapta totalmente al usuario gracias a la malla que distribuye el peso y disipa el calor para ofrecer más comodidad."
+   }
+  ],
+  "pdfs": [
+   [
+    "Información del producto",
+    "https://distritohm.com/wp-content/uploads/2023/04/mirra_2_seating_brochure_es-mx.pdf"
+   ],
+   [
+    "Guía de ajuste",
+    "https://distritohm.com/wp-content/uploads/2023/04/Mirra_2_Chairs_adjustment_guide.pdf"
+   ],
+   [
+    "Cuidados y mantenimiento",
+    "https://distritohm.com/wp-content/uploads/2023/04/Care_Mirra2.pdf"
+   ]
+  ],
+  "youtube": "ds86OxG0rxk"
+ },
+ "aeron": {
+  "slug": "aeron",
+  "name": "Aeron",
+  "sku": 8507,
+  "url": "https://distritohm.com/tienda/aeron/",
+  "category": "Sillas de trabajo",
+  "brand": "Herman Miller",
+  "designer": "Diseñado por Don Chadwick y Bill Stumpf",
+  "delivery_note": "Para entregas en el domicilio es necesario pedir presupuesto personalizado",
+  "color_note": "Los colores en las imágenes son meramente orientativos",
+  "notes": [
+   "Las ruedas que incorporan nuestras sillas Aeron son aptas para suelo duro y blando (alfombra). Si tiene una necesidad especifica de ruedas, no dude en consultarnos."
+  ],
+  "description": [
+   "Pistón de altura máxima (427-579mm), con limitador de la reclinación e inclinación negativa, brazos totalmente ajustables (en altura, pivotantes y en profundidad), en acabado vinílico, Soporte lumbar Dual PostureFit® SL , todo incluido.",
+   "A elegir tamaño, acabado estructura y base, y tipo de ruedas."
+  ],
+  "specs": [
+   [
+    "Peso",
+    "A 18,14 kg · B 24,5 kg · C 25,4 kg"
+   ],
+   [
+    "Modelo A",
+    "Altura 1,47–1,75 m · Peso 40–68 kg"
+   ],
+   [
+    "Modelo B",
+    "Altura 1,58–1,98 m · Peso 59–148 kg"
+   ],
+   [
+    "Modelo C",
+    "Altura 1,60–1,98 m · Peso 81,5–159 kg"
+   ]
+  ],
+  "price_from": 1120.0,
+  "price_to": 2082.9,
+  "offer_count": 36,
+  "options": [
+   {
+    "key": "attribute_pa_aeron-tamano",
+    "label": "Tamaño",
+    "options": [
+     {
+      "value": "grande-c",
+      "label": "Grande (C)"
+     },
+     {
+      "value": "mediana-b",
+      "label": "Mediana (B)"
+     },
+     {
+      "value": "pequena-a",
+      "label": "Pequeña (A)"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_aeron-acabados",
+    "label": "Acabados Estructura y base",
+    "options": [
+     {
+      "value": "carbon-polished-aluminium",
+      "label": "Carbon / Aluminio pulido",
+      "swatch": "assets/products/aeron/sw-acabados-carbon-polished-aluminium.jpg"
+     },
+     {
+      "value": "carbon-dark-carbon",
+      "label": "Carbon / Dark Carbon",
+      "swatch": "assets/products/aeron/sw-acabados-carbon-dark-carbon.jpg"
+     },
+     {
+      "value": "carbon-satin-carbon",
+      "label": "Carbon / Satin Carbon",
+      "swatch": "assets/products/aeron/sw-acabados-carbon-satin-carbon.jpg"
+     },
+     {
+      "value": "graphite-polished-aluminium",
+      "label": "Grafito / Aluminio pulido",
+      "swatch": "assets/products/aeron/sw-acabados-graphite-polished-aluminium.jpg"
+     },
+     {
+      "value": "graphite-graphite",
+      "label": "Grafito / Grafito",
+      "swatch": "assets/products/aeron/sw-acabados-graphite-graphite.jpg"
+     },
+     {
+      "value": "jasper-aluminio-pulido",
+      "label": "Jasper / Aluminio pulido",
+      "swatch": "assets/products/aeron/sw-acabados-jasper-aluminio-pulido.jpg"
+     },
+     {
+      "value": "jasper-jasper",
+      "label": "Jasper / Jasper",
+      "swatch": "assets/products/aeron/sw-acabados-jasper-jasper.jpg"
+     },
+     {
+      "value": "mineral-polished-aluminium",
+      "label": "Mineral / Aluminio pulido",
+      "swatch": "assets/products/aeron/sw-acabados-mineral-polished-aluminium.jpg"
+     },
+     {
+      "value": "mineral-satin-aluminium",
+      "label": "Mineral / Aluminio satinado",
+      "swatch": "assets/products/aeron/sw-acabados-mineral-satin-aluminium.jpg"
+     },
+     {
+      "value": "mineral-dark-mineral",
+      "label": "Mineral / Dark Mineral",
+      "swatch": "assets/products/aeron/sw-acabados-mineral-dark-mineral.jpg"
+     },
+     {
+      "value": "nightfall-aluminio-satinado",
+      "label": "Nightfall / Aluminio pulido",
+      "swatch": "assets/products/aeron/sw-acabados-nightfall-aluminio-satinado.jpg"
+     },
+     {
+      "value": "nightfall-nightfall",
+      "label": "Nightfall / Nightfall",
+      "swatch": "assets/products/aeron/sw-acabados-nightfall-nightfall.jpg"
+     }
+    ]
+   }
+  ],
+  "variations": [],
+  "image": "assets/products/aeron/main.jpg",
+  "points_image": null,
+  "features": [
+   {
+    "n": "1",
+    "title": "Suspensión Pellicle 8Z",
+    "text": "Pellicle es el nombre que recibe su innovadora suspensión en elastómero. Ofrece una comodidad sin precedentes a través de ocho zonas de tensión variada (cuatro en el respaldo y cuatro en el asiento) para una mejor distribución de presión y peso corporal. Pellicle permite que el aire el calor y la humedad atraviesen la silla para que la temperatura de la piel se mantenga fresca y uniforme."
+   },
+   {
+    "n": "2",
+    "title": "PostureFit SL",
+    "text": "Esta pieza patentada por Herman Miller, ofrece el soporte más efectivo a la región sacra de la columna vertebral. Al apoyarse la pelvis debidamente, la columna mantiene su forma de S natural con lo que se activa la postura más saludable mientras se parmanece sentado. La almohadilla secundaria apoya la región lumbar, para mayor confort."
+   },
+   {
+    "n": "3",
+    "title": "Inclinación Harmonic ™ 2",
+    "text": "El reclinado de la silla es suave, continuo y sobretodo adaptable a la preferencia del usuario. Aeron se mueve con el usuario de forma natural, lo que permite cambiar de postura de forma intuitiva y con un punto de equilibrio óptimo que no compromete esfuerzo ni sobretrabajo de los musculos del cuerpo. Por eso, al final de un día de trabajo no hay fatiga ni dolor de espalda."
+   },
+   {
+    "n": "4",
+    "title": "Tres tamaños",
+    "text": "Aeron viene en tres tamaños para asegurar un mejor ajuste. (A) H 97,8 cm W 65,4 cm (B) H 104,4 cm W 68,6 cm (C) H 109,2 cm W 71,8 cm"
+   }
+  ],
+  "pdfs": [
+   [
+    "Cuidado y mantenimiento",
+    "https://distritohm.com/wp-content/uploads/2023/04/Cuidado-y-Mantenimiento-de-la-Silla-Aeron.pdf"
+   ],
+   [
+    "Ficha técnica Aeron",
+    "https://distritohm.com/wp-content/uploads/2023/04/Ficha-tecnica-Aeron.pdf"
+   ],
+   [
+    "Tamaños",
+    "https://distritohm.com/wp-content/uploads/2023/04/tallas-Aeron.pdf"
+   ]
+  ],
+  "youtube": "3rmWJDRvnYs"
+ },
+ "cosm": {
+  "slug": "cosm",
+  "name": "Cosm",
+  "sku": 8223,
+  "url": "https://distritohm.com/tienda/cosm/",
+  "category": "Sillas de trabajo",
+  "brand": "Herman Miller",
+  "designer": "Diseñada por Studio 7.5",
+  "delivery_note": "Para entregas en el domicilio es necesario pedir presupuesto personalizado",
+  "color_note": "Los colores en las imágenes son meramente orientativos",
+  "notes": [],
+  "description": [
+   "Un diseño vanguardista basado en innovaciones técnicas que te harán sentir como si estuvieras flotando. Cosm brinda confort inmediato y personalizado al usuario, sin ningún tipo de ajuste manual.",
+   "Incluye pistón de altura máxima (427-579mm), con reclinación autoajustable. A elegir altura del respaldo (baja, media y alta), tipo de brazos (sin brazos, fijos, ajustables en altura y en forma de hoja) y el color, que en tres de ellos tiene el mismo tono en todas partes (Canyon, Glaciar y Nightfall)."
+  ],
+  "specs": [
+   [
+    "Peso",
+    "18,5 Kg"
+   ],
+   [
+    "Altura total",
+    "114 cm a 130 cm"
+   ],
+   [
+    "Profundidad",
+    "67,8 cm"
+   ],
+   [
+    "Profundidad Asiento",
+    "39 cm"
+   ],
+   [
+    "Ancho Asiento",
+    "50,5 cm"
+   ],
+   [
+    "Altura Asiento",
+    "41,91 cm a 53,34 cm"
+   ],
+   [
+    "Peso máximo del usuario",
+    "156 kg"
+   ]
+  ],
+  "price_from": 1100.0,
+  "price_to": 1543.65,
+  "offer_count": 73,
+  "options": [
+   {
+    "key": "attribute_pa_cosm-altura-del-respaldo",
+    "label": "Altura del respaldo",
+    "options": [
+     {
+      "value": "alta",
+      "label": "Alta"
+     },
+     {
+      "value": "baja",
+      "label": "Baja"
+     },
+     {
+      "value": "media",
+      "label": "Media"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_cosm-brazos",
+    "label": "Brazos",
+    "options": [
+     {
+      "value": "ajustables-en-altura",
+      "label": "Ajustables en altura"
+     },
+     {
+      "value": "brazos-fijos",
+      "label": "Brazos fijos"
+     },
+     {
+      "value": "en-forma-de-hoja",
+      "label": "En forma de hoja"
+     },
+     {
+      "value": "sin-brazos",
+      "label": "Sin brazos"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_cosm-acabado-estructura",
+    "label": "Acabado estructura",
+    "options": [
+     {
+      "value": "carbon",
+      "label": "Carbon",
+      "swatch": "assets/products/cosm/sw-estructura-carbon.jpg"
+     },
+     {
+      "value": "graphite",
+      "label": "Grafito",
+      "swatch": "assets/products/cosm/sw-estructura-graphite.jpg"
+     },
+     {
+      "value": "studio-white",
+      "label": "Studio white",
+      "swatch": "assets/products/cosm/sw-estructura-studio-white.jpg"
+     },
+     {
+      "value": "canyon",
+      "label": "Canyon",
+      "swatch": "assets/products/cosm/sw-estructura-canyon.jpg"
+     },
+     {
+      "value": "glacier",
+      "label": "Glacier",
+      "swatch": "assets/products/cosm/sw-estructura-glacier.jpg"
+     },
+     {
+      "value": "nightfall",
+      "label": "Nightfall",
+      "swatch": "assets/products/cosm/sw-estructura-nightfall.jpg"
+     }
+    ]
+   }
+  ],
+  "variations": [],
+  "image": "assets/products/cosm/main.jpg",
+  "points_image": "assets/products/cosm/puntos.jpg",
+  "features": [
+   {
+    "n": "1",
+    "title": "Inclinación Auto-Harmonic",
+    "text": "Elimina la necesidad de ajustar manualmente la tensión de inclinación ofreciendo el soporte adecuado al peso y estatura del usuario. Proporciona un movimiento natural y balanceado ante los cambios de postura."
+   },
+   {
+    "n": "2",
+    "title": "Suspensión Intercept",
+    "text": "Su diseño elimina espacios entre asiento y respaldo envolviendo el cuerpo para ofrecer comodidad y soporte ergonómico."
+   },
+   {
+    "n": "3",
+    "title": "Marco Flexible",
+    "text": "El marco delgado pero resistente permite la torción del cuerpo ofreciendo libertad de movimiento para mayor comodidad."
+   }
+  ],
+  "pdfs": [
+   [
+    "Información del producto",
+    "https://distritohm.com/wp-content/uploads/2023/03/cosm_chairs_brochure_es-mx.pdf"
+   ],
+   [
+    "Guía de ajustes",
+    "https://distritohm.com/wp-content/uploads/2023/03/cosm_chairs_user_adjustment_guide.pdf"
+   ],
+   [
+    "Cuidado y mantenimiento",
+    "https://distritohm.com/wp-content/uploads/2023/03/cosm_care.pdf"
+   ]
+  ],
+  "youtube": "jrP6D392cAc"
+ },
+ "sayl": {
+  "slug": "sayl",
+  "name": "Sayl",
+  "sku": 8100,
+  "url": "https://distritohm.com/tienda/sayl/",
+  "category": "Sillas de trabajo",
+  "brand": "Herman Miller",
+  "designer": "Diseñada por Yves Béhar para Herman Miller",
+  "delivery_note": "Para entregas en el domicilio es necesario pedir presupuesto personalizado",
+  "color_note": "Los colores en las imágenes son meramente orientativos",
+  "notes": [],
+  "description": [
+   "La silla más asequible con todas las características de Herman Miller, gran diseño, ergonomía de primera calidad e ingeniería estética.",
+   "A elegir la reclinación, el ajuste lumbar, el tipo de brazos y acabados de la estructura y base y respaldo y asiento en una amplia gama de colores"
+  ],
+  "specs": [
+   [
+    "Peso",
+    "17,25 kg"
+   ],
+   [
+    "Altura Total",
+    "85 cm a 103 cm"
+   ],
+   [
+    "Profundidad",
+    "40 cm a 45 cm"
+   ],
+   [
+    "Altura Asiento",
+    "40 cm a 50,8 cm"
+   ],
+   [
+    "Ancho",
+    "62 cm"
+   ],
+   [
+    "Peso máximo del usuario",
+    "159kg"
+   ]
+  ],
+  "price_from": 581.4,
+  "price_to": 821.61,
+  "offer_count": 232,
+  "options": [
+   {
+    "key": "attribute_pa_y-tower-marco-respaldo",
+    "label": "Y Tower / Marco respaldo (Estructura y base)",
+    "options": [
+     {
+      "value": "black-polished-aluminium",
+      "label": "Negro / Aluminio pulido",
+      "swatch": "assets/products/sayl/sw-marco-respaldo-black-polished-aluminium.jpg"
+     },
+     {
+      "value": "black-black",
+      "label": "Negro / Negro",
+      "swatch": "assets/products/sayl/sw-marco-respaldo-black-black.jpg"
+     },
+     {
+      "value": "white-polished-aluminium",
+      "label": "Studio White / Aluminio pulido",
+      "swatch": "assets/products/sayl/sw-marco-respaldo-white-polished-aluminium.jpg"
+     },
+     {
+      "value": "fog-studiowhite",
+      "label": "Studio White / Fog",
+      "swatch": "assets/products/sayl/sw-marco-respaldo-fog-studiowhite.jpg"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_sayl-tilt",
+    "label": "Inclinación",
+    "options": [
+     {
+      "value": "tilt-limiter",
+      "label": "Limitador de inclinación"
+     },
+     {
+      "value": "tilt-limiter-with-seat-angle-adjustment",
+      "label": "Limitador de inclinación con ajuste de ángulo"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_sayl-soporte-lumbar",
+    "label": "Soporte lumbar",
+    "options": [
+     {
+      "value": "sin-ajuste-lumbar",
+      "label": "Sin ajuste lumbar"
+     },
+     {
+      "value": "soporte-lumbar-ajustable",
+      "label": "Soporte lumbar ajustable"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_sayl-ajuste-de-brazos",
+    "label": "Ajuste de brazos",
+    "options": [
+     {
+      "value": "height-adjustable",
+      "label": "Ajustables en altura"
+     },
+     {
+      "value": "fully-adjustable",
+      "label": "Completamente ajustables"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_sayl-color-respaldo-y-asient",
+    "label": "Color respaldo y asiento",
+    "options": [
+     {
+      "value": "berry-blue-scuba",
+      "label": "Berry Blue / Scuba",
+      "swatch": "assets/products/sayl/sw-respaldo-y-asient-berry-blue-scuba.jpg"
+     },
+     {
+      "value": "black-havana",
+      "label": "Black / Havana",
+      "swatch": "assets/products/sayl/sw-respaldo-y-asient-black-havana.jpg"
+     },
+     {
+      "value": "fog-blizzard",
+      "label": "Fog / Blizzard",
+      "swatch": "assets/products/sayl/sw-respaldo-y-asient-fog-blizzard.jpg"
+     },
+     {
+      "value": "green-apple-apple",
+      "label": "Green Apple / Apple",
+      "swatch": "assets/products/sayl/sw-respaldo-y-asient-green-apple-apple.jpg"
+     },
+     {
+      "value": "red-belice",
+      "label": "Red / Belice",
+      "swatch": "assets/products/sayl/sw-respaldo-y-asient-red-belice.jpg"
+     },
+     {
+      "value": "slate-grey-paseo",
+      "label": "Slate Grey / Paseo",
+      "swatch": "assets/products/sayl/sw-respaldo-y-asient-slate-grey-paseo.jpg"
+     },
+     {
+      "value": "studio-white-belice",
+      "label": "Studio White / Belice",
+      "swatch": "assets/products/sayl/sw-respaldo-y-asient-studio-white-belice.jpg"
+     },
+     {
+      "value": "studio-white-blizzard",
+      "label": "Studio White / Blizzard",
+      "swatch": "assets/products/sayl/sw-respaldo-y-asient-studio-white-blizzard.jpg"
+     }
+    ]
+   }
+  ],
+  "variations": [],
+  "image": "assets/products/sayl/main.jpg",
+  "points_image": "assets/products/sayl/puntos.jpg",
+  "features": [
+   {
+    "n": "1",
+    "title": "Inclinación Harmonic ® Suspension",
+    "text": "Las hebras de elastómero que forman el respaldo, varían en grosor y tensión para soportar adecuadamente la columna vertebral y fomentar al mismo tiempo el movimiento saludable. El paso del aire a través de la malla disipa el calor y la humedad, favoreciendo una temperatura corporal fresca y constante."
+   },
+   {
+    "n": "3",
+    "title": "Posture Fit ®",
+    "text": "El PostureFit de Sayl utiliza los hilos verticales y horizontales del respaldo de la silla para sostener adecuadamente la base de la columna (zona sacra) y mantener la pelvis inclinada hacia adelante, evitando el encorvamiento de la espalda y la fatiga muscular."
+   },
+   {
+    "n": "4",
+    "title": "Soporte Lumbar ajustable (opcional)",
+    "text": "Provee soporte y confort adicional a la región lumbar"
+   },
+   {
+    "n": "5",
+    "title": "Asiento contorneado",
+    "text": "La forma especial del asiento de Sayl es de espuma inyectada, para ofrecer más comodidad y durabilidad a largo plazo, sin deformaciones y para personas de todas las formas y tallas."
+   }
+  ],
+  "pdfs": [
+   [
+    "Información del producto",
+    "https://distritohm.com/wp-content/uploads/2023/04/sayl_seating_brochure_es-mx.pdf"
+   ],
+   [
+    "Ficha técnica Sayl",
+    "https://distritohm.com/wp-content/uploads/2023/04/Ficha-tecnica-Sayl.pdf"
+   ],
+   [
+    "Cuidados y mantenimiento",
+    "https://distritohm.com/wp-content/uploads/2023/04/Cuidado-y-mantenimiento-de-la-silla-Sayl.pdf"
+   ]
+  ],
+  "youtube": "Lpg2v2GQJc8"
+ },
+ "embody": {
+  "slug": "embody",
+  "name": "Embody",
+  "sku": 8203,
+  "url": "https://distritohm.com/tienda/embody/",
+  "category": "Sillas de trabajo",
+  "brand": "Herman Miller",
+  "designer": "Diseñado por Don Chadwick y Bill Stumpf",
+  "delivery_note": "Para entregas en el domicilio es necesario pedir presupuesto personalizado",
+  "color_note": "Los colores en las imágenes son meramente orientativos",
+  "notes": [],
+  "description": [
+   "Pistón de altura máxima (427-579mm), con limitador de reclinación, brazos totalmente ajustables, en acabado vinílico, con asiento ajustable en profundidad, todo incluido.",
+   "A elegirle acabado de la estructura y base, y el acabado del tapizado con una amplia gama de colores."
+  ],
+  "specs": [
+   [
+    "Peso",
+    "28,43 kg"
+   ],
+   [
+    "Altura Total",
+    "106 cm a 114 cm"
+   ],
+   [
+    "Profundidad",
+    "38 cm a 45 cm"
+   ],
+   [
+    "Altura Asiento (cm)",
+    "40 cm a 52 cm"
+   ],
+   [
+    "Ancho",
+    "75 cm"
+   ],
+   [
+    "Peso máximo del usuario",
+    "136 kg"
+   ]
+  ],
+  "price_from": 1240.0,
+  "price_to": 1758.11,
+  "offer_count": 27,
+  "options": [
+   {
+    "key": "attribute_pa_embody-acabado-estructura",
+    "label": "Acabado estructura",
+    "options": [
+     {
+      "value": "blanco",
+      "label": "Blanco",
+      "swatch": "assets/products/embody/sw-estructura-blanco.jpg"
+     },
+     {
+      "value": "graphite",
+      "label": "Grafito",
+      "swatch": "assets/products/embody/sw-estructura-graphite.jpg"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_embody-acabado-base",
+    "label": "Acabado base",
+    "options": [
+     {
+      "value": "graphite",
+      "label": "Grafito",
+      "swatch": "assets/products/embody/sw-base-graphite.jpg"
+     },
+     {
+      "value": "aluminio-pulido",
+      "label": "Aluminio pulido",
+      "swatch": "assets/products/embody/sw-base-aluminio-pulido.jpg"
+     },
+     {
+      "value": "titanium",
+      "label": "Titanio",
+      "swatch": "assets/products/embody/sw-base-titanium.jpg"
+     }
+    ]
+   },
+   {
+    "key": "attribute_pa_embody-tapizado",
+    "label": "Tapizado",
+    "options": [
+     {
+      "value": "berry-blue-tejido-rhythm",
+      "label": "Berry Blue (tejido Rhythm)",
+      "swatch": "assets/products/embody/sw-tapizado-berry-blue-tejido-rhythm.jpg"
+     },
+     {
+      "value": "twilight-tejido-rhythm",
+      "label": "Twilight (tejido Rhythm)",
+      "swatch": "assets/products/embody/sw-tapizado-twilight-tejido-rhythm.jpg"
+     },
+     {
+      "value": "charcoal-tejido-rhythm",
+      "label": "Charcoal (tejido Rhythm)",
+      "swatch": "assets/products/embody/sw-tapizado-charcoal-tejido-rhythm.jpg"
+     },
+     {
+      "value": "black-tejido-rhythm",
+      "label": "Negro (tejido Rhythm)",
+      "swatch": "assets/products/embody/sw-tapizado-black-tejido-rhythm.jpg"
+     }
+    ]
+   }
+  ],
+  "variations": [
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "aluminio-pulido",
+     "attribute_pa_embody-tapizado": "berry-blue-tejido-rhythm"
+    },
+    "price": 1758.11,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-f3bf38e9.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "aluminio-pulido",
+     "attribute_pa_embody-tapizado": "twilight-tejido-rhythm"
+    },
+    "price": 1758.11,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-2f0f025c.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "aluminio-pulido",
+     "attribute_pa_embody-tapizado": "charcoal-tejido-rhythm"
+    },
+    "price": 1758.11,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-39d4f6e8.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "aluminio-pulido",
+     "attribute_pa_embody-tapizado": "black-tejido-rhythm"
+    },
+    "price": 1758.11,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-a97ec45f.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "berry-blue-tejido-rhythm"
+    },
+    "price": 1590.55,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-3cd3c1f6.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "twilight-tejido-rhythm"
+    },
+    "price": 1590.55,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-5a62a82f.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "charcoal-tejido-rhythm"
+    },
+    "price": 1590.55,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-132232d1.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "black-tejido-rhythm"
+    },
+    "price": 1590.55,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-475a047d.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "black-tejido-balance"
+    },
+    "price": 1652.41,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-100bd905.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "carbon-tejido-balance"
+    },
+    "price": 1651.65,
+    "stock": "ENTREGA PREFERENTE (5-7 Días)",
+    "in_stock": true,
+    "img": "assets/products/embody/v-e66a666d.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "berry-blue-tejido-rhythm"
+    },
+    "price": 1590.55,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-b1568173.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "twilight-tejido-rhythm"
+    },
+    "price": 1590.55,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-59359883.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "charcoal-tejido-rhythm"
+    },
+    "price": 1590.55,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-1288aac1.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "black-tejido-rhythm"
+    },
+    "price": 1590.55,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-c3c66345.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "blanco",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "black-tejido-balance"
+    },
+    "price": 1652.41,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-917ced55.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "aluminio-pulido",
+     "attribute_pa_embody-tapizado": "berry-blue-tejido-rhythm"
+    },
+    "price": 1712.15,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-8eb8a9bb.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "aluminio-pulido",
+     "attribute_pa_embody-tapizado": "twilight-tejido-rhythm"
+    },
+    "price": 1712.15,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-efcce6d4.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "aluminio-pulido",
+     "attribute_pa_embody-tapizado": "charcoal-tejido-rhythm"
+    },
+    "price": 1712.15,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-ecd5746a.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "aluminio-pulido",
+     "attribute_pa_embody-tapizado": "black-tejido-rhythm"
+    },
+    "price": 1712.15,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-06ab44ea.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "berry-blue-tejido-rhythm"
+    },
+    "price": 1461.37,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-f17c43c6.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "twilight-tejido-rhythm"
+    },
+    "price": 1461.37,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-bc816974.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "charcoal-tejido-rhythm"
+    },
+    "price": 1496.95,
+    "stock": "PRODUCTO AGOTADO",
+    "in_stock": false,
+    "img": "assets/products/embody/v-062c0251.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "graphite",
+     "attribute_pa_embody-tapizado": "black-tejido-rhythm"
+    },
+    "price": 1240,
+    "stock": "ENTREGA PREFERENTE (5-7 Días)",
+    "in_stock": true,
+    "img": "assets/products/embody/v-41c23db6.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "berry-blue-tejido-rhythm"
+    },
+    "price": 1461.37,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-8c794c3b.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "twilight-tejido-rhythm"
+    },
+    "price": 1461.37,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-418d9ac9.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "charcoal-tejido-rhythm"
+    },
+    "price": 1461.37,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-31d8c0a9.jpg"
+   },
+   {
+    "attrs": {
+     "attribute_pa_embody-acabado-estructura": "graphite",
+     "attribute_pa_embody-acabado-base": "titanium",
+     "attribute_pa_embody-tapizado": "black-tejido-rhythm"
+    },
+    "price": 1461.37,
+    "stock": "DISPONIBLE BAJO PEDIDO A FÁBRICA",
+    "in_stock": true,
+    "img": "assets/products/embody/v-9bcfc6c2.jpg"
+   }
+  ],
+  "image": "assets/products/embody/main.jpg",
+  "points_image": null,
+  "features": [
+   {
+    "n": "1",
+    "title": "Inclinación Embody",
+    "text": "El reclinadoes suave, continuo y adaptable a la preferencia del usuario."
+   },
+   {
+    "n": "2",
+    "title": "PostureFit SL",
+    "text": "Apoya la columna vertebral en su punto más bajo, el sacro. Refuerza la pelvis, previniendo el encorvamiento y la fatiga consecuencias de sentarse durante largos periodos de tiempo."
+   },
+   {
+    "n": "3",
+    "title": "Pixelated Support™",
+    "text": "Una matriz de píxeles de alta ingeniería que proporciona la distribución de la presión en todo el asiento y respaldo, para una distribución óptima del peso, flujo sanguineo y calor corporal."
+   },
+   {
+    "n": "4",
+    "title": "Back fit adjustment ™",
+    "text": "Permite posicionar el respaldo en línea con la curvatura natural de la columna para conseguir la postura más equilibrada. Una vez que la silla está bien ajustada, el respaldo responde a los micromovimientos del cuerpo."
+   },
+   {
+    "n": "5",
+    "title": "Diseño estrecho del respaldo",
+    "text": "Fomenta el movimiento del torso y permite a los brazos balancearse sin restricciones."
+   }
+  ],
+  "pdfs": [
+   [
+    "Información del producto",
+    "https://distritohm.com/wp-content/uploads/2023/04/embody_chairs_brochure_es-mx.pdf"
+   ],
+   [
+    "Ficha técnica Embody",
+    "https://distritohm.com/wp-content/uploads/2023/04/Ficha-tecnica-Embody.pdf"
+   ],
+   [
+    "Cuidados y mantenimiento",
+    "https://distritohm.com/wp-content/uploads/2023/04/Cuidado-y-Mantenimiento-de-la-Silla-Embody.pdf"
+   ]
+  ],
+  "youtube": "tdWcDH6Eltk"
+ }
+}

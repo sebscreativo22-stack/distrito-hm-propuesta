@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Producto — Distrito HM</title>
+<meta name="description" content="Ficha de producto de Distrito HM, Associate Dealer oficial MillerKnoll en España.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Mona+Sans:wdth,wght@75..125,200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-pdp">
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="logo" href="index.html" aria-label="Distrito HM"><img src="assets/logos/dhm-mark.png" alt="Distrito HM" height="36"></a>
+    <nav class="nav__links" id="navLinks" aria-label="Principal">
+      <a href="productos.html" aria-current="page">Productos</a>
+      <a href="index.html#empresas">Empresas</a>
+      <a href="index.html#wfh">Work from home</a>
+      <a href="index.html#marcas">Marcas</a>
+      <a href="index.html#showroom">Showroom</a>
+      <a href="index.html#blog">Blog y podcast</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="nav__cta">
+      <a class="btn btn--outline" href="index.html#wfh">Tienda</a>
+      <a class="btn btn--dark" href="index.html#showroom">Pedir cita <i>→</i></a>
+    </div>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap pdp-top">
+    <p class="crumbs" id="crumbs"><a href="index.html">Inicio</a> <span>/</span> <a href="productos.html">Productos</a></p>
+  </div>
+
+  <section class="pdp wrap" id="pdp" aria-live="polite"></section>
+
+  <section class="section section--bone grid-light" id="pdp-details" hidden>
+    <div class="wrap pdp-details" id="pdpDetails"></div>
+  </section>
+
+  <section class="section" id="pdp-related" hidden>
+    <div class="wrap">
+      <div class="sec-head"><h2 class="h-lg reveal">También te puede interesar</h2><a class="btn btn--outline" href="productos.html#sillas">Ver todas las sillas <i>→</i></a></div>
+      <div class="pgrid pgrid--4" id="related"></div>
+    </div>
+  </section>
+
+  <section class="section section--oat">
+    <div class="wrap split help">
+      <div>
+        <p class="eyebrow">Asesoría</p>
+        <h2 class="h-lg reveal">¿Dudas con la configuración?</h2>
+        <p class="body">Ven al showroom de Madrid y pruébala en persona, o cuéntanos tu caso y un especialista de Distrito HM te recomienda la mejor opción.</p>
+        <div class="hero__actions">
+          <a class="btn btn--dark" href="index.html#showroom">Pedir cita en el showroom <i>→</i></a>
+          <a class="btn btn--outline" href="index.html#contacto">Escríbenos</a>
+        </div>
+        <p class="back"><a class="link" href="productos.html">← Volver a productos</a></p>
+      </div>
+      <ul class="shop-links shop-links--light">
+        <li><a href="index.html#empresas"><b>Proyecto para empresas</b><span>Oficinas completas con Living Office</span><i>→</i></a></li>
+        <li><a href="index.html#wfh"><b>Work from home</b><span>Tienda online, promociones y outlet</span><i>→</i></a></li>
+        <li><a href="tel:+34914917887"><b>Llámanos</b><span>Madrid +34 914 917 887 · Barcelona +34 933 033 885</span><i>→</i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="section section--dark grid-dark" id="contacto">
+    <div class="wrap foot foot--slim">
+      <div class="foot__brand">
+        <a class="logo logo--light" href="index.html"><img src="assets/logos/dhm-millerknoll-white.svg" alt="Distrito HM · MillerKnoll Associate Dealer" height="44"></a>
+        <p class="note">MillerKnoll Associate Dealer Spain</p>
+        <p class="foot__links"><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a href="index.html#empresas">Empresas</a><a href="index.html#wfh">Work from home</a><a href="index.html#showroom">Showroom</a><a href="index.html#blog">Blog y podcast</a></p>
+      </div>
+      <div class="foot__where">
+        <p class="eyebrow eyebrow--red">Dónde estamos</p>
+        <address><p>Madrid <a href="tel:+34914917887">+34 914 917 887</a></p><p>Barcelona <a href="tel:+34933033885">+34 933 033 885</a></p><p><a href="mailto:info@distritohm.com">info@distritohm.com</a></p></address>
+      </div>
+      <div class="foot__where">
+        <p class="eyebrow eyebrow--red">Showroom</p>
+        <address><p>Calle Albasanz, 15<br>Edificio A, Planta Baja<br>Madrid, 28037</p></address>
+      </div>
+    </div>
+    <div class="wrap bar">
+      <p><a href="#">Aviso legal y política de privacidad</a> · <a href="#">Condiciones de compra</a> · <a href="#">Política de cookies</a></p>
+      <p>2016 – 2026 · Todos los derechos reservados · @DistritoHM</p>
+    </div>
+  </footer>
+</main>
+
+<script src="assets/data/products.js"></script>
+<script src="main.js"></script>
+<script src="producto.js"></script>
+</body>
+</html>

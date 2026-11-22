@@ -11,7 +11,8 @@ const CATS = [
   { id: 'repuestos', label: 'Repuestos' },
 ];
 const HM = 'Herman Miller', KN = 'Knoll';
-const P = (cat, name, brand, img, type, extra = {}) => ({ cat, name, brand, img, type, href: '#', ...extra });
+const FICHAS = { 'Mirra 2': 'mirra-2', 'Aeron': 'aeron', 'Cosm': 'cosm', 'Embody': 'embody', 'Sayl': 'sayl' };
+const P = (cat, name, brand, img, type, extra = {}) => ({ cat, name, brand, img, type, href: FICHAS[name] ? 'producto.html?p=' + FICHAS[name] : '#', ...extra });
 const PRODUCTS = [
   P('sillas', 'Mirra 2', HM, 'mirra2', 'Silla de trabajo', { star: true }),
   P('sillas', 'Aeron', HM, 'aeron', 'Silla de trabajo'),
