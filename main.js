@@ -47,9 +47,6 @@ modal.innerHTML = `
         Escribir por WhatsApp</a>
       <button type="button" class="btn btn--outline" id="pmMail">Enviar un email</button>
     </div>
-    <p class="pmodal__fallback" id="pmFallback" hidden role="status"></p>
-    <p class="pmodal__meta">¿No se abre tu correo? <a href="${PROPOSAL.gmail}" target="_blank" rel="noopener">Abrir Gmail</a> · <button type="button" class="pmodal__copy" id="pmCopy">Copiar email</button></p>
-    <p class="pmodal__meta pmodal__meta--2">WhatsApp ${PROPOSAL.phone}</p>
     <button type="button" class="pmodal__back" data-close>Seguir viendo la web</button>
   </div>`;
 document.body.appendChild(modal);
@@ -67,31 +64,16 @@ function showToast(msg) {
   toastTimer = setTimeout(() => toast.classList.remove('on'), 3200);
 }
 
-async function copyText(t) {
-  try { await navigator.clipboard.writeText(t); return true; } catch (_) {}
-  const ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;opacity:0;top:0';
-  document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (_) {} ta.remove(); return ok;
-}
-const pmFallback = modal.querySelector('#pmFallback');
-const pmCopy = modal.querySelector('#pmCopy');
 modal.querySelector('#pmMail').addEventListener('click', () => {
   let opened = false; const seen = () => { opened = true; };
   window.addEventListener('blur', seen, { once: true });
   document.addEventListener('visibilitychange', seen, { once: true });
   window.addEventListener('pagehide', seen, { once: true });
   window.location.href = PROPOSAL.mail;
-  setTimeout(async () => {
+  setTimeout(() => {
     window.removeEventListener('blur', seen); document.removeEventListener('visibilitychange', seen); window.removeEventListener('pagehide', seen);
-    if (opened) return;
-    const ok = await copyText(PROPOSAL.email);
-    pmFallback.hidden = false;
-    pmFallback.textContent = ok ? `No se abrió tu correo. Copiamos ${PROPOSAL.email}: pégalo en tu app de correo.` : `No se abrió tu correo. Escríbenos a ${PROPOSAL.email}.`;
+    if (!opened) window.open(PROPOSAL.gmail, '_blank', 'noopener');
   }, 1200);
-});
-pmCopy.addEventListener('click', async () => {
-  const ok = await copyText(PROPOSAL.email);
-  pmCopy.textContent = ok ? '¡Copiado!' : PROPOSAL.email;
-  setTimeout(() => { pmCopy.textContent = 'Copiar email'; }, 2200);
 });
 
 let lastFocus = null;
